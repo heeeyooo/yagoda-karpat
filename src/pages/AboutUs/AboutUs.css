@@ -1,0 +1,29 @@
+.about-container {
+  min-height: 100vh;
+  padding: 50px 50px 0;
+  text-align: center;
+}
+
+.about-main-info {
+  text-align: right;
+  margin: 0;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 700;
+}
+
+.about-info {
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.ukraine-map {
+  width: clamp(300px, 50vw, 600px);
+}
+
+@media screen and (max-width: 900px) {
+  .about-container {
+    padding: 25px 25px 0;
+  }
+}
