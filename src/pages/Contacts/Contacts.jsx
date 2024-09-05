@@ -62,19 +62,15 @@ const Contacts = () => {
         </p>
         <div className="contacts-icons-container">
           <div className="icon-container">
-            <img className="contact-icon" src="img/icons/email.png" alt="" />
+            <i className="fa-solid fa-envelope"></i>
             <p>dordyaysberries@gmail.com</p>
           </div>
           <div className="icon-container">
-            <img
-              className="contact-icon"
-              src="img/icons/phone-receiver-silhouette.png"
-              alt=""
-            />
+            <i className="fa-solid fa-phone"></i>
             <p>+380968065513</p>
           </div>
           <div className="icon-container">
-            <img className="contact-icon" src="img/icons/map.png" alt="" />
+            <i className="fa-solid fa-location-dot"></i>
             <p className="c-address">
               Central street, 34B
               <br />

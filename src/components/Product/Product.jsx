@@ -1,4 +1,12 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css/bundle";
 import "./Product.css";
+
+// import required modules
+import { EffectCreative, Pagination, Navigation } from "swiper/modules";
 
 const Product = ({ product }) => {
   const {
@@ -28,9 +36,34 @@ const Product = ({ product }) => {
           CALL US
         </a>
       </div>
-      <div className="img-container">
-        <img src={`./img/products/${img}`} />
-      </div>
+      <Swiper
+        grabCursor={true}
+        effect={"creative"}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        }}
+        modules={[EffectCreative, Pagination, Navigation]}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        //
+        observer={true}
+        observeParents={true}
+        //
+        // className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={`./img/products/${img}`} alt={title} />
+        </SwiperSlide>
+        <SwiperSlide>More photos coming soon!</SwiperSlide>
+      </Swiper>
     </div>
   );
 };

@@ -31,6 +31,11 @@
   text-align: center;
 }
 
+.icon-container i {
+  font-size: 30px;
+  color: #c8dd13;
+}
+
 .icon-container p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -39,7 +44,6 @@
 .form-map-container {
   display: flex;
   align-items: center;
-  background-color: #c8dd13;
   height: 600px;
 }
 
@@ -84,7 +88,7 @@
 .input2,
 .input3 {
   margin: 10px 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #c9dd1330;
   padding: 20px 25px;
   width: 100%;
   border: none;
@@ -130,9 +134,12 @@
 }
 
 .input4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   resize: none;
   margin: 10px 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #c9dd1330;
   padding: 20px 25px;
   width: 100%;
   border: none;

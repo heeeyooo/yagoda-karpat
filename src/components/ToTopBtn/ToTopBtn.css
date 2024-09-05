@@ -10,6 +10,7 @@
   bottom: -50px;
   right: 25px;
   transition: bottom 0.3s;
+  z-index: 50;
 }
 
 .to-top-btn--active {

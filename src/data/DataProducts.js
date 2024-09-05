@@ -95,7 +95,7 @@ const productsData = [
     pack: "Packaging: 25 kg paper bag",
     temp: "Temperature: -21 °C",
     origin: "Origin: Ukraine",
-    img: "",
+    img: "plum.png",
   },
   {
     id: "apricot",
