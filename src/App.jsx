@@ -16,7 +16,6 @@ function App() {
   return (
     <>
       <Loading />
-
       <div className="wrapper">
         <Header />
         <BurgerBtn />

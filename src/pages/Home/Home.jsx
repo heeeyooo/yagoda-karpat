@@ -31,7 +31,7 @@ const Home = () => {
       </div>
       <div className="home-container__product-wrapper">
         <a href="#bilberry">
-          <img src={bilberryIcon} alt="" />
+          <img src={bilberryIcon} alt="Bilberry" />
         </a>
         <a href="#lingonberry">
           <img src={lingonberryIcon} alt="" />

@@ -16,7 +16,7 @@
   content: "";
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: var(--color-dark);
   transform: translateY(-10px);
   transition: all 0.5s;
 }
@@ -25,7 +25,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: var(--color-dark);
   opacity: 1;
   transition: all 0.5s;
 }
@@ -35,7 +35,7 @@
   content: "";
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: var(--color-dark);
   transform: translateY(10px);
   transition: all 0.5s;
 }
@@ -67,19 +67,34 @@
 }
 
 .home--active {
-  animation: revealLink 1s forwards !important;
+  animation: revealLink 0.5s 0.3s forwards !important;
+  transform: translateX(50px);
+  opacity: 0;
 }
 
 .about--active {
-  animation: revealLink 1s 0.2s forwards !important;
+  animation: revealLink 0.5s 0.4s forwards !important;
+  transform: translateX(50px);
+  opacity: 0;
 }
 
 .products--active {
-  animation: revealLink 1s 0.4s forwards !important;
+  animation: revealLink 0.5s 0.5s forwards !important;
+  transform: translateX(50px);
+  opacity: 0;
 }
 
 .contacts--active {
-  animation: revealLink 1s 0.6s forwards !important;
+  animation: revealLink 0.5s 0.6s forwards !important;
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+@keyframes revealLink {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 900px) {

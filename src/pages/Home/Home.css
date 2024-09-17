@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--color-light);
 }
 
 .home-container__wrapper {
@@ -18,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #c9dd1330;
+  background-color: var(--color-dark);
   border-radius: 25px;
   padding: 0 25px;
   opacity: 0;
@@ -33,7 +34,7 @@
   right: 50px;
   height: 75px;
   border-radius: 25px;
-  background-color: #c9dd1330;
+  background-color: var(--color-dark);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,16 +55,33 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .home-container__product-wrapper img {
   width: 50px;
-  filter: grayscale(1);
-  transition: all 0.3s;
 }
 
-.home-container__product-wrapper img:hover {
-  filter: grayscale(0);
+.home-container__product-wrapper a::before {
+  content: attr(href);
+  position: absolute;
+  bottom: 50px;
+  width: max-content;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.home-container__product-wrapper a:hover::before {
+  content: attr(href);
+  position: absolute;
+  bottom: 60px;
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .home-main-info {
@@ -143,7 +161,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c9dd1330;
     border-radius: 25px;
     padding: 0 25px;
   }
@@ -157,7 +174,6 @@
     height: auto;
     left: auto;
     border-radius: 25px;
-    background-color: #c9dd1330;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -168,5 +184,18 @@
   .contact-us-btn-container {
     right: 50%;
     transform: translateX(50%);
+  }
+  .home-container__product-wrapper a::before {
+    top: 50% !important;
+    transform: translateY(-50%);
+    right: 35px;
+    opacity: 0;
+  }
+
+  .home-container__product-wrapper a:hover::before {
+    bottom: auto;
+    right: 45px;
+    opacity: 1;
+    transition: all 0.5s;
   }
 }

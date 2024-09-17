@@ -8,7 +8,8 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  background: rgb(255, 255, 255, 0.5);
+  /* HEX 80 IS 50% OPACITY ? */
+  background-color: #ebe6e080;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 5;
@@ -20,7 +21,6 @@
 }
 
 .header__logo {
-  color: black;
   font-size: 26px;
 }
 
