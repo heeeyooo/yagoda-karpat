@@ -1,161 +1,134 @@
 .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  background: var(--color-light);
-  transform: translateX(100%);
-  transition: all 0.5s ease;
-  z-index: 107;
-  padding: 100px 50px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: var(--color-light);
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    z-index: 107;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .menu-link {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
-  font-size: clamp(26px, 3vw, 36px);
-  font-weight: 700;
-  position: relative;
-  transition: all 0.3s;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s;
 }
 
 .link:hover {
-  letter-spacing: 5px;
+    letter-spacing: 5px;
 }
 
 .link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  background: #c8dd13;
-  transition: transform 0.3s ease-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: #c8dd13;
+    transition: transform 0.3s ease-out;
 }
 
 .link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .products-btn {
-  border: none;
-  background: none;
-  color: var(--color-dark);
-  font-size: clamp(26px, 3vw, 36px);
-  font-weight: 700;
-  cursor: pointer;
-  padding: 0;
-  margin-left: 5px;
+    border: none;
+    background: none;
+    color: var(--color-dark);
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
 }
 
 .products-btn--active {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 .active-link {
-  letter-spacing: 5px;
-  transition: all 0.3s;
+    letter-spacing: 5px;
+    transition: all 0.3s;
 }
 
 .active-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5px;
-  transform: scale(1) !important;
-  transform-origin: bottom left !important;
-  background: #c8dd13;
-  transition: transform 0.3s ease-out;
-}
-
-.lang {
-  font-size: 24px;
-}
-
-.en,
-.ua {
-  border: none;
-  background-color: transparent;
-  font-size: 24px;
-  transition: color 0.2s;
-  cursor: pointer;
-  padding: 0;
-}
-
-.en:hover,
-.ua:hover {
-  color: #c8dd13;
-}
-
-.active-lang {
-  color: #c8dd13;
-}
-
-.lang-span {
-  margin: 0 10px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    transform: scale(1) !important;
+    transform-origin: bottom left !important;
+    background: #c8dd13;
+    transition: transform 0.3s ease-out;
 }
 
 .curtain {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
 }
 
 .dropdown {
-  z-index: 110;
+    z-index: 110;
 }
 
 .dropdown-content {
-  display: block;
-  position: relative;
-  left: 0px;
-  right: 0;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  transition: all 1s ease;
-  list-style-type: none;
-  padding: 0;
+    display: block;
+    position: relative;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+    list-style-type: none;
+    padding: 0;
 }
 
 .set-height-content {
-  height: fit-content;
+    height: fit-content;
 }
 
 .dropdown-content a {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(20px, 3vw, 30px);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(20px, 3vw, 30px);
 
-  font-weight: 200;
-  transition: color 0.2s;
+    font-weight: 200;
+    transition: color 0.2s;
 }
 
 .dropdown-content a:hover {
-  color: #c8dd13;
+    color: #c8dd13;
 }
 
 @media screen and (max-width: 650px) {
-  .menu {
-    width: 100%;
-  }
+    .menu {
+        width: 100%;
+    }
 }

@@ -1,164 +1,214 @@
 .product-container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .product-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .product-info-container {
-  width: 50%;
-  padding: 0 50px;
-  box-sizing: border-box;
+    width: 50%;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .product-name {
-  font-size: clamp(20px, 3vw, 30px);
-  font-weight: 700;
-  margin: 0;
+    position: relative;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 700;
+    margin: 0;
+}
+
+.product-name::after {
+    position: absolute;
+    content: "#";
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.product-name:hover::after {
+    opacity: 1;
 }
 
 .product-info {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  margin: 0;
-  text-align: justify;
+    font-family: var(--secondary-font-family);
+    font-weight: 300;
+    margin: 0;
+    text-align: justify;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .icon-info {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
 }
 
 .product-list-info {
-  font-family: var(--secondary-font-family);
-  list-style-position: inside;
-  padding: 0;
-  font-weight: 500;
+    font-family: var(--secondary-font-family);
+    list-style-position: inside;
+    padding: 0;
+    font-weight: 500;
 }
 
 .product-list-info li::marker {
-  color: var(--color-dark);
-  font-size: 24px;
+    color: var(--color-dark);
+    font-size: 24px;
+}
+
+.contact-us-btn-container-product {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.contact-us-btn-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 24px;
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.contact-us-btn-product::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    background-color: #c9dd1380;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+.contact-us-btn-container-product:hover .contact-us-btn-product::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* SWIPER */
 
 .my-swiper {
-  transform: translateX(-25px);
-  opacity: 0;
+    transform: translateX(-25px);
+    opacity: 0;
 }
 
 .active {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-  transition: transform 1s ease, opacity 0.5s ease;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    transition: transform 1s ease, opacity 0.5s ease;
 }
 
 .my-swiper-1 {
-  transform: translateX(25px);
-  opacity: 0;
+    transform: translateX(25px);
+    opacity: 0;
 }
 
 .product-info-container {
-  transform: translateX(25px);
-  opacity: 0;
-  width: 50%;
-  padding: 0 50px;
-  box-sizing: border-box;
+    transform: translateX(25px);
+    opacity: 0;
+    width: 50%;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .product-info-container-1 {
-  transform: translateX(-25px);
-  opacity: 0;
-  width: 50%;
-  padding: 0 50px;
-  box-sizing: border-box;
+    transform: translateX(-25px);
+    opacity: 0;
+    width: 50%;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .swiper {
-  width: 50%;
-  height: 100%;
+    width: 50%;
+    height: 100%;
 }
 
 .swiper-slide {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    font-family: var(--secondary-font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: white;
+    color: white;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  scale: 1;
-  transition: all 0.5s !important;
+    scale: 1;
+    transition: all 0.5s !important;
 }
 
 .swiper-button-disabled {
-  scale: 0;
-  transition: all 0.5s !important;
+    scale: 0;
+    transition: all 0.5s !important;
 }
 
 .swiper-pagination-bullet {
-  opacity: 0.5 !important;
-  background-color: white !important;
-  border-radius: 5px !important;
-  transition: width 0.5s;
+    opacity: 0.5 !important;
+    background-color: white !important;
+    border-radius: 5px !important;
+    transition: width 0.5s;
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  width: 20px !important;
-  border-radius: 5px !important;
-  background-color: white !important;
-  transition: width 0.5s;
+    opacity: 1 !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    transition: width 0.5s;
 }
 
 @media screen and (width < 1000px) {
-  .product-info-container,
-  .product-info-container-1 {
-    width: 100%;
-    padding: 50px;
-  }
+    .product-info-container,
+    .product-info-container-1 {
+        width: 100%;
+        padding: 50px;
+    }
 
-  .product-container,
-  .product-container1 {
-    flex-direction: column-reverse;
-  }
+    .product-container,
+    .product-container1 {
+        flex-direction: column-reverse;
+    }
 
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
-  .product-info-container,
-  .product-info-container-1 {
-    padding: 25px;
-  }
+    .product-info-container,
+    .product-info-container-1 {
+        padding: 25px;
+    }
+    .contact-us-btn-container-product {
+        right: 25px;
+    }
 }

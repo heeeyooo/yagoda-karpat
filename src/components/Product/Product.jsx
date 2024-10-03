@@ -63,7 +63,7 @@ const Product = ({ product }) => {
         <>
             <div id={id} className={productContainer}>
                 <div className={infoContainer}>
-                    <a href={`#${id}`} className={`product-name`}>
+                    <a href={`#${id}`} className="product-name">
                         {title}
                     </a>
                     <p className="product-info">{info}</p>
@@ -72,9 +72,12 @@ const Product = ({ product }) => {
                         <li className="temp">{temp}</li>
                         <li className="origin">{origin}</li>
                     </ul>
-                    <a className="call-us-btn" href="#section4">
-                        CALL US
-                    </a>
+                    <div className="contact-us-btn-container-product">
+                        <a className="contact-us-btn-product" href="#section4">
+                            Contact us <pre> </pre>
+                            <i className="fa-solid fa-arrow-right-long arrow-btn"></i>
+                        </a>
+                    </div>
                 </div>
                 <Swiper
                     grabCursor={true}
