@@ -9,33 +9,26 @@ const Products = () => {
     addEventListener("keyup", () => {
         const slider = document.querySelectorAll(".my-swiper");
         slider.forEach((slide) => {
-            // if (window.innerHeight > slide.getBoundingClientRect().top + 200) {
             slide.classList.add("active");
-            // }
         });
         const productInfo = document.querySelectorAll(
             ".product-info-container"
         );
         productInfo.forEach((product) => {
-            // if (window.innerHeight > product.getBoundingClientRect().top + 200) {
             product.classList.add("active");
-            // }
         });
         const slider1 = document.querySelectorAll(".my-swiper-1");
         slider1.forEach((slide) => {
-            // if (window.innerHeight > slide.getBoundingClientRect().top + 200) {
             slide.classList.add("active");
-            // }
         });
         const productInfo1 = document.querySelectorAll(
             ".product-info-container-1"
         );
         productInfo1.forEach((product) => {
-            // if (window.innerHeight > product.getBoundingClientRect().top + 200) {
             product.classList.add("active");
-            // }
         });
     });
+
     return (
         <div className="products-container" id="section3">
             <h3 className="products-main-info">Our products</h3>
@@ -49,7 +42,7 @@ const Products = () => {
             <input
                 className="search-input"
                 type="text"
-                placeholder="Product"
+                placeholder="What product are you searching for?"
                 onChange={(e) => setSearch(e.target.value)}
             />
             {productsData

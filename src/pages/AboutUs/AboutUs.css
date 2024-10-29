@@ -1,29 +1,49 @@
 .about-container {
-  min-height: 100vh;
-  padding: 50px 50px 0;
-  text-align: center;
+    min-height: 100vh;
+    padding: 50px 50px 0;
+    text-align: center;
 }
 
 .about-main-info {
-  text-align: right;
-  margin: 0;
-  font-size: clamp(26px, 3vw, 36px);
-  font-weight: 700;
+    text-align: right;
+    margin: 0;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
 }
 
 .about-info {
-  font-family: var(--secondary-font-family);
-  font-weight: 300;
-  text-align: justify;
-  font-size: 16px;
+    font-family: var(--secondary-font-family);
+    font-weight: 300;
+    text-align: justify;
+    font-size: 16px;
+    padding: 50px 0;
 }
 
 .ukraine-map {
-  width: clamp(300px, 50vw, 600px);
+    width: clamp(300px, 50vw, 600px);
+}
+
+.contacts-grid-container {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    row-gap: 0;
+}
+
+.contacts-grid-container span {
+    font-size: 50px;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 900px) {
-  .about-container {
-    padding: 25px 25px 0;
-  }
+    .about-container {
+        padding: 25px 25px 0;
+    }
+    .contacts-grid-container {
+        flex-direction: column;
+        row-gap: 50px;
+    }
 }

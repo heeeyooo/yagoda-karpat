@@ -105,10 +105,7 @@ const Product = ({ product }) => {
                     {productImages.map((productImage, index) => {
                         return (
                             <SwiperSlide key={index}>
-                                <img
-                                    src={`./img/products/${productImage}`}
-                                    alt={title}
-                                />
+                                <img src={productImage} alt={title} />
                             </SwiperSlide>
                         );
                     })}

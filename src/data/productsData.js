@@ -1,3 +1,24 @@
+import bilberryImg from "./products-img/bilberry.jpg";
+import lingonberryImg from "./products-img/lingonberry.png";
+import rosehipImg from "./products-img/rosehip.jpg";
+import rosehipImg2 from "./products-img/rosehip2.jpg";
+import elderberryImg from "./products-img/elderberry.png";
+import strawberryImg from "./products-img/strawberry.png";
+import raspberryImg from "./products-img/raspberry.jpg";
+import raspberryImg2 from "./products-img/raspberry2.jpg";
+import raspberryImg3 from "./products-img/raspberry3.jpg";
+import plumImg from "./products-img/plum.jpg";
+import plumImg2 from "./products-img/plum2.jpg";
+import apricotImg from "./products-img/apricot.jpg";
+import sweetPepperImg from "./products-img/sweet-pepper.jpg";
+import sweetPepperImg2 from "./products-img/sweet-pepper2.jpg";
+import sweetPepperImg3 from "./products-img/sweet-pepper3.jpg";
+import sweetPepperImg4 from "./products-img/sweet-pepper4.jpg";
+import boletusImg from "./products-img/boletus.jpg";
+import chanterelleImg from "./products-img/chanterelle.jpg";
+import sourCherryImg from "./products-img/sour-cherry.jpg";
+import sourCherryImg2 from "./products-img/sour-cherry2.jpg";
+
 const productsData = [
     {
         id: "bilberry",
@@ -7,7 +28,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["bilberry.jpg"],
+        productImages: [bilberryImg],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
     },
@@ -19,7 +40,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["lingonberry.png"],
+        productImages: [lingonberryImg],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },
@@ -31,7 +52,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["rosehip.jpg", "rosehip2.jpg"],
+        productImages: [rosehipImg, rosehipImg2],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
     },
@@ -43,7 +64,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["elderberry.png"],
+        productImages: [elderberryImg],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },
@@ -55,7 +76,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["strawberry.png"],
+        productImages: [strawberryImg],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
     },
@@ -67,7 +88,7 @@ const productsData = [
         pack: "Packaging: 10 kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["raspberry.jpg", "raspberry2.jpg", "raspberry3.jpg"],
+        productImages: [raspberryImg2, raspberryImg, raspberryImg3],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },
@@ -79,7 +100,7 @@ const productsData = [
         pack: "Packaging: 25 kg paper bag, 10kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["plum.jpg", "plum2.jpg"],
+        productImages: [plumImg, plumImg2],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
     },
@@ -91,7 +112,7 @@ const productsData = [
         pack: "Packaging: 10 kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["apricot.jpg"],
+        productImages: [apricotImg],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },
@@ -104,10 +125,10 @@ const productsData = [
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
         productImages: [
-            "sweet-pepper.jpg",
-            "sweet-pepper2.jpg",
-            "sweet-pepper3.jpg",
-            "sweet-pepper4.jpg",
+            sweetPepperImg,
+            sweetPepperImg2,
+            sweetPepperImg3,
+            sweetPepperImg4,
         ],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
@@ -120,7 +141,7 @@ const productsData = [
         pack: "Packaging: 10 kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["boletus.jpg"],
+        productImages: [boletusImg],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },
@@ -132,7 +153,7 @@ const productsData = [
         pack: "Packaging: 10 kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["chanterelle.jpg"],
+        productImages: [chanterelleImg],
         classSwiper: "my-swiper",
         infoContainer: "product-info-container",
     },
@@ -144,7 +165,7 @@ const productsData = [
         pack: "Packaging: 10kg carton box",
         temp: "Temperature: -21 °C",
         origin: "Origin: Ukraine",
-        productImages: ["sour-cherry.jpg", "sour-cherry2.jpg"],
+        productImages: [sourCherryImg, sourCherryImg2],
         classSwiper: "my-swiper-1",
         infoContainer: "product-info-container-1",
     },

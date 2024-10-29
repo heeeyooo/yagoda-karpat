@@ -1,54 +1,19 @@
 import "./Contacts.css";
 
 const Contacts = () => {
-    const moveUpLabel1 = () => {
-        document.querySelector(".label1").classList.add("label-focus");
-    };
-    const moveUpLabel2 = () => {
-        document.querySelector(".label2").classList.add("label-focus");
-    };
-    const moveUpLabel3 = () => {
-        document.querySelector(".label3").classList.add("label-focus");
-    };
-    const moveUpLabel4 = () => {
-        document.querySelector(".label4").classList.add("label-focus");
-    };
+    function moveUpLabel(labelName) {
+        document.querySelector(labelName).classList.add("label-focus");
+    }
 
-    const changeLabel1 = () => {
-        document.querySelector(".label1").classList.remove("label-focus");
-        if (document.querySelector(".input1").value === "") {
-            document.querySelector(".label1").classList.remove("label-focus");
+    function changeLabel(labelName, inputName) {
+        document.querySelector(labelName).classList.remove("label-focus");
+        if (document.querySelector(inputName).value === "") {
+            document.querySelector(labelName).classList.remove("label-focus");
         } else {
-            document.querySelector(".label1").classList.add("label-focus");
+            document.querySelector(labelName).classList.add("label-focus");
         }
-    };
+    }
 
-    const changeLabel2 = () => {
-        document.querySelector(".label2").classList.remove("label-focus");
-        if (document.querySelector(".input2").value === "") {
-            document.querySelector(".label2").classList.remove("label-focus");
-        } else {
-            document.querySelector(".label2").classList.add("label-focus");
-        }
-    };
-
-    const changeLabel3 = () => {
-        document.querySelector(".label3").classList.remove("label-focus");
-        if (document.querySelector(".input3").value === "") {
-            document.querySelector(".label3").classList.remove("label-focus");
-        } else {
-            document.querySelector(".label3").classList.add("label-focus");
-        }
-    };
-
-    const changeLabel4 = () => {
-        document.querySelector(".label4").classList.remove("label-focus");
-        if (document.querySelector(".input4").value === "") {
-            document.querySelector(".label4").classList.remove("label-focus");
-        } else {
-            document.querySelector(".label4").classList.add("label-focus");
-        }
-    };
     return (
         <>
             <div className="contacts-container" id="section4">
@@ -73,13 +38,8 @@ const Contacts = () => {
                     <div className="icon-container">
                         <i className="fa-solid fa-location-dot"></i>
                         <p className="c-address">
-                            Central street, 34B
-                            <br />
-                            Tyachiv district
-                            <br />
-                            Transcarpathian region
-                            <br />
-                            Ukraine
+                            Central street, 34B Tyachiv district Transcarpathian
+                            region Ukraine
                         </p>
                     </div>
                 </div>
@@ -96,8 +56,8 @@ const Contacts = () => {
                         <input
                             id="first-name"
                             className="input1"
-                            onFocus={moveUpLabel1}
-                            onBlur={changeLabel1}
+                            onFocus={() => moveUpLabel(".label1")}
+                            onBlur={() => changeLabel(".label1", ".input1")}
                             type="text"
                         />
                         <label className="label1" htmlFor="first-name">
@@ -108,8 +68,8 @@ const Contacts = () => {
                         <input
                             id="last-name"
                             className="input2"
-                            onFocus={moveUpLabel2}
-                            onBlur={changeLabel2}
+                            onFocus={() => moveUpLabel(".label2")}
+                            onBlur={() => changeLabel(".label2", ".input2")}
                             type="text"
                         />
                         <label className="label2" htmlFor="last-name">
@@ -120,8 +80,8 @@ const Contacts = () => {
                         <input
                             id="tel"
                             className="input3"
-                            onBlur={changeLabel3}
-                            onFocus={moveUpLabel3}
+                            onFocus={() => moveUpLabel(".label3")}
+                            onBlur={() => changeLabel(".label3", ".input3")}
                             type="tel"
                         />
                         <label className="label3" htmlFor="tel">
@@ -131,8 +91,8 @@ const Contacts = () => {
                     <div className="input-container">
                         <textarea
                             className="input4"
-                            onBlur={changeLabel4}
-                            onFocus={moveUpLabel4}
+                            onFocus={() => moveUpLabel(".label4")}
+                            onBlur={() => changeLabel(".label4", ".input4")}
                             name=""
                             id="message"
                             cols="10"
@@ -148,14 +108,6 @@ const Contacts = () => {
                         value="Send Message"
                     />
                 </form>
-                {/* <iframe
-          className="location-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.0764004226559!2d23.74658175529479!3d48.10434021444485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47379f8eb1dc7f03%3A0x6e39e1068f4cb4a!2sYagoda%20Karpat%2C%20LLC!5e0!3m2!1sen!2sua!4v1722068818836!5m2!1sen!2sua"
-          style="border:0;"
-          allowFullScreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe> */}
                 <iframe
                     className="location-map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.0764004226559!2d23.74658175529479!3d48.10434021444485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47379f8eb1dc7f03%3A0x6e39e1068f4cb4a!2sYagoda%20Karpat%2C%20LLC!5e0!3m2!1sen!2sua!4v1722068818836!5m2!1sen!2sua"

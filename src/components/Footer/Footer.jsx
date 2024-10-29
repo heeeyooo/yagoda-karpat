@@ -99,10 +99,10 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="creator">
-                <p className="rights">
-                    © Yagoda Karpat 2024 | Made with{" "}
-                    <i class="fa-regular fa-heart"></i> by{" "}
+            <div className="footer__rights-creator">
+                <p className="rights">© 2024 Yagoda Karpat</p>
+                <p className="creator">
+                    Made with <i class="fa-regular fa-heart"></i> by{" "}
                     <a
                         href="https://stepandordiai.netlify.app/"
                         target="_blank"

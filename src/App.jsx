@@ -11,24 +11,22 @@ import Products from "./pages/Products/Products";
 import AboutUs from "./pages/aboutUs/AboutUs";
 
 function App() {
-  document.addEventListener("touchstart", function () {}, true);
-
-  return (
-    <>
-      <Loading />
-      <div className="wrapper">
-        <Header />
-        <BurgerBtn />
-        <NavCurtain />
-        <Home />
-        <AboutUs />
-        <Products />
-        <Contacts />
-        <Footer />
-        <ToTopBtn />
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Loading />
+            <div className="wrapper">
+                <Header />
+                <BurgerBtn />
+                <NavCurtain />
+                <Home />
+                <AboutUs />
+                <Products />
+                <Contacts />
+                <Footer />
+                <ToTopBtn />
+            </div>
+        </>
+    );
 }
 
 export default App;
