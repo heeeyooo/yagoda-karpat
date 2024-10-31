@@ -4,11 +4,10 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Loading from "./components/Loading/Loading";
 import NavCurtain from "./components/NavCurtain/NavCurtain";
-import ToTopBtn from "./components/ToTopBtn/ToTopBtn";
 import Contacts from "./pages/Contacts/Contacts";
 import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
-import AboutUs from "./pages/aboutUs/AboutUs";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
     return (
@@ -23,7 +22,6 @@ function App() {
                 <Products />
                 <Contacts />
                 <Footer />
-                <ToTopBtn />
             </div>
         </>
     );

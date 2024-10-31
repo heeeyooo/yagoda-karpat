@@ -18,12 +18,6 @@
     box-sizing: border-box;
 }
 
-.product-info-container {
-    width: 50%;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
 .product-name {
     position: relative;
     font-size: clamp(20px, 3vw, 30px);

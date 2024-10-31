@@ -2,8 +2,21 @@ import "./Footer.css";
 import organicImg from "./img/certificates/organic-logo.jpg";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    };
+
     return (
         <footer className="footer">
+            <button
+                title="Scroll to top"
+                className="to-top-btn"
+                onClick={scrollToTop}
+            >
+                <i className="fa-solid fa-chevron-up"></i>
+                <i className="fa-solid fa-chevron-up"></i>
+                <i className="fa-solid fa-chevron-up"></i>
+            </button>
             <a className="footer-logo" href="#section1">
                 Yagoda Karpat
             </a>

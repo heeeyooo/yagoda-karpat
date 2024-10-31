@@ -1,31 +1,30 @@
 import { useEffect } from "react";
-// import { useIntersection } from "../../utils/Observer";
 import "./AboutUs.css";
 import map from "/ukraine.svg";
 
 const AboutUs = () => {
-    // useEffect(() => {
-    addEventListener("scroll", () => {
-        if (
-            document.getElementById("years").getBoundingClientRect().top <
-            window.innerHeight
-        ) {
-            closureYears("years", 15);
-        }
-        if (
-            document.getElementById("products-js").getBoundingClientRect().top <
-            window.innerHeight
-        ) {
-            closureYears1("products-js", 13);
-        }
-        if (
-            document.getElementById("amount").getBoundingClientRect().top <
-            window.innerHeight
-        ) {
-            closureYears2("amount");
-        }
-    });
-    // });
+    useEffect(() => {
+        addEventListener("scroll", () => {
+            if (
+                document.getElementById("years").getBoundingClientRect().top <
+                window.innerHeight
+            ) {
+                closureYears("years", 15);
+            }
+            if (
+                document.getElementById("products-js").getBoundingClientRect()
+                    .top < window.innerHeight
+            ) {
+                closureYears1("products-js", 14);
+            }
+            if (
+                document.getElementById("amount").getBoundingClientRect().top <
+                window.innerHeight
+            ) {
+                closureYears2("amount");
+            }
+        });
+    }, []);
 
     let started = false;
     function closureYears(param, quantity) {
